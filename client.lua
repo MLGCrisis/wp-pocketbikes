@@ -153,7 +153,7 @@ for _, bike in pairs(Config.Bikes) do
             type = 'client',
             event = "wp-pocketbikes:client:pickup",
             icon = "fas fa-bicycle",
-            label = "Pick up bike",
+            label = "Pick up",
             itemName = bike,
         },
     }
