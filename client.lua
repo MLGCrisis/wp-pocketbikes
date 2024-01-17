@@ -105,6 +105,7 @@ RegisterNetEvent('wp-pocketbikes:client:place', function(bikeModel, bikeItemData
     SetVehicleOnGroundProperly(bike)
 
     TriggerServerEvent("wp-pocketbikes:server:RemoveItem", bikeModel)
+    TriggerEvent('wais:addmissionxp:placebike', 1) --added by pamela for wais battlepass
 
     setBikeProperties(bike, itemMetadata)
     
